@@ -14,6 +14,8 @@
 		945278D91C868415001A7223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945278D71C868415001A7223 /* LaunchScreen.storyboard */; };
 		945278E41C868415001A7223 /* AES_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945278E31C868415001A7223 /* AES_SampleTests.swift */; };
 		945278EF1C868415001A7223 /* AES_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945278EE1C868415001A7223 /* AES_SampleUITests.swift */; };
+		945278FD1C8686E7001A7223 /* AESEncrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945278FC1C8686E7001A7223 /* AESEncrypter.swift */; };
+		945278FF1C868787001A7223 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945278FE1C868787001A7223 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		945278EA1C868415001A7223 /* AES SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AES SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		945278EE1C868415001A7223 /* AES_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES_SampleUITests.swift; sourceTree = "<group>"; };
 		945278F01C868415001A7223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945278FC1C8686E7001A7223 /* AESEncrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESEncrypter.swift; sourceTree = "<group>"; };
+		945278FE1C868787001A7223 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		945279011C868952001A7223 /* AES Sample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AES Sample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945278FF1C868787001A7223 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 				945278E21C868415001A7223 /* AES SampleTests */,
 				945278ED1C868415001A7223 /* AES SampleUITests */,
 				945278CC1C868415001A7223 /* Products */,
+				945278FE1C868787001A7223 /* Security.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +106,12 @@
 			children = (
 				945278CE1C868415001A7223 /* AppDelegate.swift */,
 				945278D01C868415001A7223 /* ViewController.swift */,
+				945278FC1C8686E7001A7223 /* AESEncrypter.swift */,
 				945278D21C868415001A7223 /* Main.storyboard */,
 				945278D51C868415001A7223 /* Assets.xcassets */,
 				945278D71C868415001A7223 /* LaunchScreen.storyboard */,
 				945278DA1C868415001A7223 /* Info.plist */,
+				945279011C868952001A7223 /* AES Sample-Bridging-Header.h */,
 			);
 			path = "AES Sample";
 			sourceTree = "<group>";
@@ -258,6 +267,7 @@
 			files = (
 				945278D11C868415001A7223 /* ViewController.swift in Sources */,
 				945278CF1C868415001A7223 /* AppDelegate.swift in Sources */,
+				945278FD1C8686E7001A7223 /* AESEncrypter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +362,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "AES Sample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +401,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "AES Sample-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
