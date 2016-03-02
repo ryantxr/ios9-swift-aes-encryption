@@ -16,6 +16,8 @@
 		945278EF1C868415001A7223 /* AES_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945278EE1C868415001A7223 /* AES_SampleUITests.swift */; };
 		945278FD1C8686E7001A7223 /* AESEncrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945278FC1C8686E7001A7223 /* AESEncrypter.swift */; };
 		945278FF1C868787001A7223 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945278FE1C868787001A7223 /* Security.framework */; };
+		945279031C869403001A7223 /* MD5Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945279021C869403001A7223 /* MD5Generator.swift */; };
+		945279051C869492001A7223 /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945279041C869492001A7223 /* Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		945278FC1C8686E7001A7223 /* AESEncrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESEncrypter.swift; sourceTree = "<group>"; };
 		945278FE1C868787001A7223 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		945279011C868952001A7223 /* AES Sample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AES Sample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		945279021C869403001A7223 /* MD5Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5Generator.swift; sourceTree = "<group>"; };
+		945279041C869492001A7223 /* Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				945278CE1C868415001A7223 /* AppDelegate.swift */,
 				945278D01C868415001A7223 /* ViewController.swift */,
 				945278FC1C8686E7001A7223 /* AESEncrypter.swift */,
+				945279021C869403001A7223 /* MD5Generator.swift */,
+				945279041C869492001A7223 /* Hex.swift */,
 				945278D21C868415001A7223 /* Main.storyboard */,
 				945278D51C868415001A7223 /* Assets.xcassets */,
 				945278D71C868415001A7223 /* LaunchScreen.storyboard */,
@@ -266,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				945278D11C868415001A7223 /* ViewController.swift in Sources */,
+				945279051C869492001A7223 /* Hex.swift in Sources */,
 				945278CF1C868415001A7223 /* AppDelegate.swift in Sources */,
+				945279031C869403001A7223 /* MD5Generator.swift in Sources */,
 				945278FD1C8686E7001A7223 /* AESEncrypter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
